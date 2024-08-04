@@ -1,18 +1,24 @@
-## Getting Started
+# 💻 Desafio: Sintaxe
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## 🎯 Desafio
 
-## Folder Structure
+Desenvolver um algoritmo que simule uma criação de conta de um banco qualquer com Java utilizando a classe Scanner.
 
-The workspace contains two folders by default, where:
+## 🧱 Ferramentas utilizadas
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Java
+- Visual Studio Code
+- [Java Extensions](https://code.visualstudio.com/docs/java/extensions)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 🛠️ Links úteis
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- [Dúvida sobre o .vscode](https://stackoverflow.com/questions/32964920/should-i-commit-the-vscode-folder-to-source-control)
+- [Gerador de .gitignore](https://www.toptal.com/developers/gitignore)
+- [Input com nextLine sendo ignorado](https://www.freecodecamp.org/news/java-scanner-nextline-call-gets-skipped-solved/)
+- [Repositório do desafio](https://github.com/digitalinnovationone/trilha-java-basico/tree/main/desafios/sintaxe)
 
-## Dependency Management
+## 🧑🏻‍💻 Autor
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- [GitHub](https://github.com/GracilianoOG)
+- [LinkedIn](https://www.linkedin.com/in/gabrielgmbarros)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/GracilianoOG)
