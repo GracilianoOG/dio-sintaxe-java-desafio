@@ -1,3 +1,5 @@
+package br.com.gracilianoog;
+
 import java.util.Scanner;
 
 public class ContaTerminal {
