@@ -4,11 +4,13 @@ public class Conta {
     private int numero;
     private String agencia;
     private double saldo;
+    private Cliente cliente;
 
-    public Conta(int numero, String agencia, double saldo) {
+    public Conta(int numero, String agencia, double saldo, Cliente cliente) {
         this.numero = numero;
         this.agencia = agencia;
         this.saldo = saldo;
+        this.cliente = cliente;
     }
 
     public int getNumero() {
@@ -33,5 +35,13 @@ public class Conta {
 
     public void setSaldo(double saldo) {
         this.saldo = saldo;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 }
