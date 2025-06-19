@@ -155,6 +155,11 @@ public class ContaTerminal {
 
         cliente = clienteService.buscarClientePorNome(nomeCliente);
 
+        if(cliente == null) {
+            System.out.println("O cliente informado não existe!");
+            return;
+        }
+
         contaService.cadastrarConta(numero, agencia, saldo, cliente);
 
         System.out.println("=============== Conta cadastrada con sucesso! ===============");
