@@ -1,6 +1,7 @@
 package br.com.gracilianoog;
 
 import br.com.gracilianoog.model.Cliente;
+import br.com.gracilianoog.model.Conta;
 import br.com.gracilianoog.service.ClienteService;
 import br.com.gracilianoog.service.ContaService;
 
@@ -40,10 +41,31 @@ public class ContaTerminal {
                     buscarClientePorNome();
                 }
 
+                case 4 -> {
+                    buscarContaPorNumero();
+                }
+
                 case 7 -> {
                     System.exit(0);
                 }
             }
+        }
+    }
+
+    private static void buscarContaPorNumero() {
+        System.out.println("Informe o número da conta: ");
+        int numero = scanner.nextInt();
+
+        Conta conta = contaService.buscarContaPorNumero(numero);
+
+        if(conta != null) {
+            System.out.println("Conta encontrada!");
+            System.out.println("Titular....: " + conta.getCliente().getNome());
+            System.out.println("N° da conta: " + conta.getNumero());
+            System.out.println("Agência....: " + conta.getAgencia());
+            System.out.println("Saldo......: " + conta.getSaldo());
+        } else {
+            System.out.println("Conta de número " + numero + " não existe!");
         }
     }
 
