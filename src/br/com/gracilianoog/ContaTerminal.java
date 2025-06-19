@@ -57,6 +57,10 @@ public class ContaTerminal {
                     scanner.close();
                     System.exit(0);
                 }
+
+                default -> {
+                    System.out.println("Opção inválida! Verifique as opções válidas no menu.\n");
+                }
             }
         }
     }
