@@ -8,9 +8,9 @@ import br.com.gracilianoog.service.ContaService;
 import java.util.Scanner;
 
 public class ContaTerminal {
-    private static Scanner scanner = new Scanner(System.in);
-    private static ContaService contaService = new ContaService();
-    private static ClienteService clienteService = new ClienteService();
+    private static final Scanner scanner = new Scanner(System.in);
+    private static final ContaService contaService = new ContaService();
+    private static final ClienteService clienteService = new ClienteService();
 
     public static void main(String[] args) throws Exception {
         int opcao = -1;
