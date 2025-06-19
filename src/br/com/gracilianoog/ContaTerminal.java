@@ -49,11 +49,30 @@ public class ContaTerminal {
                     efetuarDeposito();
                 }
 
+                case 6 -> {
+                    efetuarSaque();
+                }
+
                 case 7 -> {
                     System.exit(0);
                 }
             }
         }
+    }
+
+    private static void efetuarSaque() {
+        System.out.println("Informe o número da conta: ");
+        int numero = scanner.nextInt();
+
+        if(contaService.buscarContaPorNumero(numero) == null) {
+            System.out.println("A conta informada não existe!");
+            return;
+        }
+
+        System.out.println("Informe o valor para saque: ");
+        double valor = scanner.nextDouble();
+
+        contaService.sacar(numero, valor);
     }
 
     private static void efetuarDeposito() {
