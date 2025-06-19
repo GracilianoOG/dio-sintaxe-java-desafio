@@ -6,6 +6,10 @@ import br.com.gracilianoog.model.Conta;
 public class ContaService {
     private final ContaDAO contaDAO = new ContaDAO();
 
+    public void cadastrarConta(Conta conta) {
+        this.contaDAO.salvar(conta);
+    }
+
     public void depositar(int numero, double valorDeposito) {
         Conta conta = contaDAO.buscarContaPorNumero(numero);
 
