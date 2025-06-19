@@ -30,11 +30,27 @@ public class ContaTerminal {
                     cadastrarNovaConta();
                 }
 
+                case 2 -> {
+                    cadastrarNovoCliente();
+                }
+
                 case 5 -> {
                     System.exit(0);
                 }
             }
         }
+    }
+
+    private static void cadastrarNovoCliente() {
+        String nome;
+
+        System.out.println("Informe o nome do cliente: ");
+        nome = scanner.next();
+
+        clienteService.cadastrarCliente(nome);
+
+        System.out.println("=============== Cliente cadastrado con sucesso! ===============");
+        System.out.println("Nome: " + nome);
     }
 
     public static void cadastrarNovaConta() {
