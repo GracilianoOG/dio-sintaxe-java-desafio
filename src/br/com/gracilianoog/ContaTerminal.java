@@ -18,9 +18,11 @@ public class ContaTerminal {
             System.out.println("=============== Banco Pão ===============");
             System.out.println("1 - Cadastrar nova conta");
             System.out.println("2 - Cadastrar novo cliente");
-            System.out.println("3 - Depositar valor");
-            System.out.println("4 - Sacar valor");
-            System.out.println("5 - Sair");
+            System.out.println("3 - Buscar conta");
+            System.out.println("4 - Buscar cliente");
+            System.out.println("5 - Depositar valor");
+            System.out.println("6 - Sacar valor");
+            System.out.println("7 - Sair");
             System.out.print("--> ");
 
             opcao = scanner.nextInt();
@@ -34,7 +36,7 @@ public class ContaTerminal {
                     cadastrarNovoCliente();
                 }
 
-                case 5 -> {
+                case 7 -> {
                     System.exit(0);
                 }
             }
