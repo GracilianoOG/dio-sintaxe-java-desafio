@@ -29,6 +29,10 @@ public class ContaTerminal {
                 case 1 -> {
                     cadastrarNovaConta();
                 }
+
+                case 5 -> {
+                    System.exit(0);
+                }
             }
         }
     }
@@ -56,6 +60,10 @@ public class ContaTerminal {
 
         contaService.cadastrarConta(numero, agencia, saldo, cliente);
 
-        System.out.println("Cliente cadastrado: " + cliente.getNome());
+        System.out.println("=============== Conta cadastrada con sucesso! ===============");
+        System.out.println("Nome.......: " + nomeCliente);
+        System.out.println("N° da conta: " + numero);
+        System.out.println("Agência....: " + agencia);
+        System.out.println("Saldo......: " + saldo);
     }
 }
