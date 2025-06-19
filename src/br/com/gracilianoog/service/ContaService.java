@@ -12,6 +12,10 @@ public class ContaService {
         this.contaDAO.salvar(conta);
     }
 
+    public Conta buscarContaPorNumero(int numero) {
+        return contaDAO.buscarContaPorNumero(numero);
+    }
+
     public void depositar(int numero, double valorDeposito) {
         Conta conta = contaDAO.buscarContaPorNumero(numero);
 
