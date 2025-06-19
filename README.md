@@ -2,7 +2,7 @@
 
 ## 📖 Descrição
 
-Desenvolver um algoritmo que simule uma criação de conta de um banco qualquer com Java utilizando a classe Scanner.
+Desenvolver um algoritmo que simule uma criação de conta de um banco qualquer com Java utilizando a classe Scanner. Esse exercício faz parte do desafio de Java da Digital Innovation One (DIO). Eu resolvi refatorar e praticar a organização em camadas no estilo MVC. Também adicionei um menu interativo pelo terminal, já que a versão antiga era um exercício simples e sem interação com o usuário.
 
 ## 🗂️ Instalação local
 
