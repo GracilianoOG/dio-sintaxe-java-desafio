@@ -1,12 +1,14 @@
 package br.com.gracilianoog.service;
 
 import br.com.gracilianoog.DAO.ContaDAO;
+import br.com.gracilianoog.model.Cliente;
 import br.com.gracilianoog.model.Conta;
 
 public class ContaService {
     private final ContaDAO contaDAO = new ContaDAO();
 
-    public void cadastrarConta(Conta conta) {
+    public void cadastrarConta(int numero, String agencia, double saldo, Cliente cliente) {
+        Conta conta = new Conta(numero, agencia, saldo, cliente);
         this.contaDAO.salvar(conta);
     }
 
