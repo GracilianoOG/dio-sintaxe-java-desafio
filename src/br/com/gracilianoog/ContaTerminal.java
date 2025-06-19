@@ -45,11 +45,30 @@ public class ContaTerminal {
                     buscarClientePorNome();
                 }
 
+                case 5 -> {
+                    efetuarDeposito();
+                }
+
                 case 7 -> {
                     System.exit(0);
                 }
             }
         }
+    }
+
+    private static void efetuarDeposito() {
+        System.out.println("Informe o número da conta: ");
+        int numero = scanner.nextInt();
+
+        if(contaService.buscarContaPorNumero(numero) == null) {
+            System.out.println("A conta informada não existe!");
+            return;
+        }
+
+        System.out.println("Informe o valor a ser depositado");
+        double valor = scanner.nextDouble();
+
+        contaService.depositar(numero, valor);
     }
 
     private static void buscarContaPorNumero() {
