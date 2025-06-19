@@ -36,10 +36,28 @@ public class ContaTerminal {
                     cadastrarNovoCliente();
                 }
 
+                case 3 -> {
+                    buscarClientePorNome();
+                }
+
                 case 7 -> {
                     System.exit(0);
                 }
             }
+        }
+    }
+
+    private static void buscarClientePorNome() {
+        System.out.println("Informe o nome do cliente: ");
+        String nome = scanner.next();
+
+        Cliente cliente = clienteService.buscarClientePorNome(nome);
+
+        if(cliente != null) {
+            System.out.println("Cliente encontrado!");
+            System.out.println("Nome: " + cliente.getNome());
+        } else {
+            System.out.println("Cliente " + nome + " não existe!");
         }
     }
 
