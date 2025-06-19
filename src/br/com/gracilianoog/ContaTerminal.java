@@ -38,11 +38,11 @@ public class ContaTerminal {
                 }
 
                 case 3 -> {
-                    buscarClientePorNome();
+                    buscarContaPorNumero();
                 }
 
                 case 4 -> {
-                    buscarContaPorNumero();
+                    buscarClientePorNome();
                 }
 
                 case 7 -> {
