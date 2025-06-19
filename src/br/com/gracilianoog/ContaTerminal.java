@@ -54,6 +54,7 @@ public class ContaTerminal {
                 }
 
                 case 7 -> {
+                    scanner.close();
                     System.exit(0);
                 }
             }
