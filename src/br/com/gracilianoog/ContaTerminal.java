@@ -89,6 +89,8 @@ public class ContaTerminal {
         double valor = scanner.nextDouble();
 
         contaService.depositar(numero, valor);
+
+        System.out.println("Valor repositado com sucesso!\n");
     }
 
     private static void buscarContaPorNumero() {
