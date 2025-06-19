@@ -7,10 +7,10 @@ public class Conta {
     private Cliente cliente;
 
     public Conta(int numero, String agencia, double saldo, Cliente cliente) {
-        this.numero = numero;
-        this.agencia = agencia;
-        this.saldo = saldo;
-        this.cliente = cliente;
+        this.setNumero(numero);
+        this.setAgencia(agencia);
+        this.setSaldo(saldo);
+        this.setCliente(cliente);
     }
 
     public int getNumero() {
