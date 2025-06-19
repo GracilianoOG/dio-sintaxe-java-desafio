@@ -34,8 +34,8 @@ public class Conta {
     }
 
     public void setSaldo(double saldo) {
-        if(saldo <= 0) {
-            throw new IllegalArgumentException("O saldo deve ser um valor positivo maior que zero!");
+        if(saldo < 0) {
+            throw new IllegalArgumentException("O saldo deve ser um valor positivo!");
         }
         this.saldo = saldo;
     }
