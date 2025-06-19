@@ -74,6 +74,8 @@ public class ContaTerminal {
         double valor = scanner.nextDouble();
 
         contaService.sacar(numero, valor);
+
+        System.out.println("Saque realizado com sucesso!\n");
     }
 
     private static void efetuarDeposito() {
