@@ -11,4 +11,8 @@ public class ClienteService {
         clienteDAO.salvar(cliente);
         return cliente;
     }
+
+    public Cliente buscarClientePorNome(String nome) {
+        return clienteDAO.buscarClientePorNome(nome);
+    }
 }
